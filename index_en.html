@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>>ALPHAONE English ver.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="pc.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://www.openhiun.com/hangul/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <script>
+
+        function loaded(){
+            
+            var canvas=document.getElementById('logo');
+
+            var context= canvas.getContext('2d');
+
+            context.strokeStyle= "#e8c558";
+            context.lineWidth=2;
+            context.beginPath();
+            context.moveTo(0,135);
+            context.lineTo(100,40);
+            context.lineTo(200,135);
+            context.stroke();
+        }
+    </script>
+
+</head>
+
+<body onload="loaded()">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        $(window).resize(function (){
+            var width_size = window.outerWidth;
+            var ratio = window.devicePixelRatio;
+            if(ratio >= 1.5){
+                location.href = 'index_mobile_en.html';
+            }
+            else{
+                if (width_size <= 950) {
+                    location.href = 'index_mobile_en.html';
+                }
+            }
+        })
+    </script> 
+    
+<!-- Header -->
+    <div id=header>
+        <span>
+            <a href="#">
+            <img src="logo.png" width="150rem" style="margin-left:30rem"></a>
+        </span>
+        <div id="topMenu" >
+            <ul>
+                <li class="topMenuLi">
+                    <a class="menuLink" href="#sec3">ABOUT</a>
+                </li>
+        
+                <li class="topMenuLi">
+                    <a class="menuLink" href="#sec5">TEAMS</a>
+                </li>
+        
+                <li class="topMenuLi">
+                    <a class="menuLink" href="#sec7">INVESTMENTS&nbsp;<i class="fa fa-caret-down" aria-hidden="true" style="font-size: 15rem;"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#sec7" class="submenuLink">STRATEGY</a></li>
+                        <li><a href="#sec9" class="submenuLink">PROCESS</a></li>
+                    </ul>
+                </li>
+            
+                <li class="topMenuLi">
+                    <a class="menuLink" href="#sec11">PORTFOLIO</a>
+                </li>
+    
+                <li class="topMenuLi">
+                    <a class="menuLink" href="#sec13">INVESTOR</a>
+                </li>
+                <li class="topMenuLi">
+                    <a class="menuLink" href="#sec15">CONTACT&nbspUS</a>
+                </li>
+                <a class="menuLink" href="index.html"><img src="South Korea.png"></a>
+            </ul>
+        </div>
+    </div>
+
+ <!--Main Page  -->
+    <div id="sec1">
+        <canvas id="logo" width="200" height="135"></canvas>
+        <div id="sec1text1"><b>ALPHA ONE INVESTMENT</b></div>
+        <hr class="bar" data-border="true" data-selector=".bar" data-title="선 컬러">
+        <div id="sec1text2">Striving for innovation <b>‘together’</b> with SMEs and start-ups.</div>
+        <!-- Scroll Animation -->
+        <div id="scroll">
+        <div class="mouse"><div class="wheel"></div></div>
+        <div><span class="arrow1"></span> <span class="arrow2"></span></div>
+        </div>
+    </div>
+
+
+<!-- Experience, Trust, Technology -->
+    <div id="sec2">
+    <div class="box">
+        <div class="number">01</div>
+        <div class="word"><span class="wordB">E</span>XPERIENCE</div>
+        <div class="txt">A pathfinder with diverse <br>experience and background.</div>
+        
+    </div>
+    <div class="box">
+        <div class="number">02</div>
+        <div class="word"><span class="wordB">T</span>RUST</div>
+        <div class="txt">Forming partnership <br>based on mutual trust.</div>
+        
+    </div>
+    <div class="box">
+        <div class="number">03</div>
+        <div class="word"><span class="wordB">T</span>ECHNOLOGY</div>
+        <div class="txt">Venturing for innovative<br> technologies and businesses.</div>
+        
+    </div>
+    </div>
+
+<!-- About Us -->
+        <div id="sec3">
+        <div id="sec3text">A B O U T&nbsp;&nbsp;&nbsp;&nbsp;U S </div>
+    </div>
+
+    <div id="sec4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                            <h6 class="sec4text1" style="letter-spacing: 0rem;"><br><strong>A partner who shapes the future of companies together. </strong></h6>
+                        </div>
+                    </div>
+                    <h3 class="sec4text2" style="font-size:35rem;"><br><strong>Thank you for visiting our website.</strong></h3>
+                    <p class="sec4text3"><br><br>Alphaone Investment strives to find the future of South Korea in the evolving next-generation industry.<br>
+                        We look for and invest in companies with outstanding technologies, new services and innovative mind-set.<br>
+                        Our goal is to become a partner helping companies on their way to becoming one of the finest and greatest.<br><br><br>
+                        SMEs and start-ups are fundamental driver of economic growth, creating jobs, opportunities and hope.<br>
+                        Alphaone Investment is searching for the next unicorn that will lead the global economy. <br><br><br>
+                        We offer investment and comprehensive support (HR, finance, strategy, marketing, alliance/partnership), <br>which create an environment where companies are able to focus solely on their business. 
+                        <br>We will accomplish growth together as a partner, by offering <br>our advanced investment know-how of a Global Leading Investment Group.<br><br><br><br> Thank you.
+                         <span><strong>CEO Daniel Lee</strong></span><img class="sign" src="sign.png"><br><br><br><br></p>
+                    <span class="line line-row" data-selector=".line"></span>
+                    <p class="sec4text4"><span><strong>2020.07</strong></span><br>Alphaone Investment Establishment<br><br><span><strong>2020.08</strong></span><br>SME and Start-up Investment Company Registered<br><br><span><strong>2020.09</strong></span><br>Well-being Start Fund Establishment<br><br><span><strong>2020.10</strong></span><br>MP Group Investment<br><br><span><strong>2020.12</strong></span><br>SWA Investment<br><br><span><strong>2021.03</strong></span><br>Financial Supervisory Service PEF GP Licensed&nbsp;<br><br><br><br><br></p>
+                    </div>
+                
+    </div>
+
+<!-- Teams -->
+    <div id="sec5">
+        <h1><br><br><storng>T E A M S</storng></h1>
+    </div>
+
+    <div id="sec6">
+        <div class="container full-width">
+            <!-- row 6으로 묶어줘야함! -->
+            <!-- CEO -->
+            <div class="row6">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="imgbox"><img src="CEO.png" width="270px" height="370px">
+                    </div>
+                    </div>
+                <div class="col-xs-12 col-sm-6 col-md-6"></div>
+                    <p class="imgtext"><span class="sec6title"><strong>CEO &nbsp; Daniel Lee</strong></span><br><br><br>Seoul National University International Economics&nbsp;<br><br>QM Venture Capital CEO / Centurion Technology Investment Senior Fund Manager /<br> Cowell Venture Capital Senior Fund Manager / Samsung C&T Corporation</p>
+                    </div>
+                <div class="sec6line"> <hr class= "teamline"> </div>
+
+            <!-- CSO-->
+                <div class="row6">
+                <div class="imgbox"><img src="GOLD CSO.png" width="270px" height="370px">
+                    </div>
+                    <p class="imgtext"><span class="sec6title"><strong>CSO &nbsp; GOLD</strong></span><br><br><br><br><br><br>University of Maryland<br><br>前 IHU Investment  COO / TR Investment CEO</p>
+                    </div>
+                 <div class="sec6line"> <hr class= "teamline"> </div>
+
+            <!-- CFO-->
+                <div class="row6">
+                    <div class="imgbox"><img src="CFO.png" width="270px" height="370px">
+                        </div>
+                        <p class="imgtext"><span class="sec6title"><strong><br>CFO &nbsp; Dong Keun SONG</strong></span><br><br><br><span class="sec6role"><strong>CFO and Compliance Officer</strong></span><br><br><br>&nbsp;AICPA<br><br>Seoul National University English Education<br><br>BNP Paribas Cardif Finance Department Director / Mirae Asset Life Insurance <br>Accountings Team Manager / PCA Life Insurance Deputy General Manager</p>
+                    </div>
+                </div>
+                <div class="sec6line"> <hr class= "teamline"> </div>
+
+             <!-- CLO -->
+                <div class="row6">
+                    <div class="imgbox"><img src="CLO.png" width="270px" height="370px">
+                        </div>
+                        <p class="imgtext"><span class="sec6title"><strong><br>CLO &nbsp; Taewoo Kim</strong></span><br><br><br><span class="sec6role"><strong>CLO and Auditor </strong></span><br><br><br>Lawyer (47th Bar examination, 37th Judicial Research and Training Institute)<br><br>Yonsei University Business Administration<br><br>Ullim Law Firm / Jungjin Law Firm / Sunmyung Law Firm</p>
+                    </div>
+                </div>
+                <div class="sec6line"> <hr class= "teamline"> </div>
+
+            <!-- 투자본부장 -->
+                <div class="row6">
+                    <div class="imgbox"><img src="Investment director.png" width="270px" height="370px">
+                        </div>
+                        <p class="imgtext"><span class="sec6title"><strong><br>Investment Director Moonsoo KIM</strong></span><br><br><br><br>Yale School of Management (MBA)
+                            <br><br>Yonsei University Business Administration,<br><br>Heungkuk Securities Co., Ltd. CRO / Idea Bridge Asset Management CEO / Repertory Managing Director</p>
+                    </div>
+                </div>
+                <div class="sec6line"> <hr class= "teamline"> </div>
+
+             <!-- Manager-->
+             <div class="row6">
+                <div class="imgbox"><img src="Manager Park.png" width="270px" height="370px">
+                    </div>
+                    <p class="imgtext"><span class="sec6title"><strong>Manager &nbsp; Jaesung Park</strong></span><br><br><br><span class="sec6role"><strong>Investment and Research</strong></span><br><br><br>Drexel University International Business</p>
+                    </div>
+                 <div class="sec6line"> <hr class= "teamline"> </div>
+
+                 <div class="row6">
+                    <div class="imgbox"><img src="Manager Baek.png" width="270px" height="370px">
+                        </div>
+                        <p class="imgtext"><span class="sec6title"><strong>Manager &nbsp; Seungha Baek</strong></span><br><br><br><span class="sec6role"><strong>Investment and Research</strong></span><br><br><br>University of Edinburgh Accounting and Finance</p>
+                        </div>
+                     <div class="sec6line"> <hr class= "teamline"> </div>
+        </div>
+    </div>
+
+
+<!-- Investment Strategy -->
+    <div id="sec7">
+        <div id="sec7text">INVESTMENTS<br><br><span class="sec7box">STRATEGY</span></div>
+    </div>
+
+    <div id="sec8">
+            <div class="col1">
+            <h1 class="sec8text1" style="font-size: 25rem;">Investment Target Company<br></h1>
+            <p class="sec8text2"><br>-   Start-ups within 7 years of establishment<br><br><br><br>-   Every SMEs excluding those that are restricted<br>&nbsp;&nbsp; under the ⎡Support for Small and <br>&nbsp;&nbsp;Medium Enterprise Establishment Act⎦</p>
+        </div>
+
+            <div class="col2">
+            <h1 class="sec8text1" style="font-size: 25rem;">Investment Method<br></h1>
+            <p class="sec8text2"><br>-   Stock: Ordinary Share, Redeemable<br>&nbsp;&nbsp;&nbsp;Preference Share<br><br><br>-   Bond: Convertible Bond, Bond with Warrants<br><br><br>-   Project Financing</p>
+        </div>
+
+            <div class="col3">
+                <h1 class="sec8text1" style="font-size: 25rem;">Main Investment Sector<br></h1>
+                <p class="sec8text2"><br>-   Industry 4.0 (AI, IoT, Big Data, FinTech etc.)<br><br><br>-   Bio and Healthcare<br><br><br>-   Digital Media Contents (VR/AR, Media Contents,<br>&nbsp;&nbsp; Game etc.)</p>
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- Investment Process -->
+    <div id="sec9">
+        <div id="sec9text">INVESTMENTS<br><br><span class="sec9box">PROCESS</span></div>
+    </div>
+
+    <div id="sec10">
+         <img src="Investment process_en.png" class="sec10img">
+     </div>
+
+
+<!-- Portfolio -->
+     <div id="sec11">
+        <div id="sec11text">PORTFOLIO</div>
+     </div>
+
+     <div id="sec12">
+         <div class="sec12box">
+             <div class="sec12img">
+                <a href="https://www.mrpizza.co.kr/" attr-link="https://www.mrpizza.co.kr/" target="_blank"><img src="MP.png"></a>
+            </div>
+            <h5 class="sec12text"><br><strong>＜MR. Pizza＞ Global Food Franchise</strong></h5>
+         </div>
+
+         <div class="sec12box">
+            <div class="sec12img">
+                <a href="http://www.sawa.co.kr/" attr-link="http://www.sawa.co.kr/" target="_blank"><img src="webtoon academy.png" width="512" height="329"></a>
+           </div>
+           <h5 class="sec12text"><br><strong>Webtoon Academy</strong></h5>
+        </div>
+     </div>
+
+
+<!-- Investor -->
+     <div id="sec13">
+        <div id="sec13text">INVESTOR</div>
+     </div>
+    <!-- Blank -->
+     <div id="sec14"></div>
+
+
+
+<!-- Contact Us -->
+     <div id="sec15">
+         <div class="sec15text1">CONTACT US</div>
+         <h1 class="sec15text2">We welcome contacts from companies <br>needing Investment.</h1>
+         <div class="backgroundtext">Contact</div>
+         <div class="textbox">
+             <div class="form-inline" role="form">
+                <form action="contact.php" method="post">
+                <span class="ele1">
+                <input class="form-control" type="text" placeholder="First name" data-contact-firstname="">
+                </span>
+
+                <div class="ele1">
+                    <input class="form-control" type="text" placeholder="Last name" data-contact-Lastname="">
+             </div>
+
+             <div class="ele1">
+                <input class="form-control" type="email" placeholder="E-mail" data-contact-Email="">
+                </div>
+
+                <div class="ele1">
+                    <input class="form-control" type="text" placeholder="Company" data-contact-Company="">
+             </div>
+
+             <div class="ele1">
+                <input class="form-control" type="text" placeholder="Message" data-contact-Message="">
+            </div>
+            <div class="btn_wrap">
+                <input class="btn" type="submit" value="SEND >"></strong>
+            </div>
+           </form>
+         </div>
+        </div>
+
+        <div class="info">
+            <p class="office"><strong>Our Office:</strong><br></p>
+            <p class="location"><br>563, Nonhyeon-ro, Gangnam-gu, Seoul,<br> Republic of Korea<br><br>Zip code) 06125<br><br></p>
+            <p class="tel"><strong>Tel) 02-2051-7701 Fax) 02-2051-7702</strong><br><span class="mail">E-mail) alphaone@alphaone.co.kr</span></p>
+
+        </div>
+
+        <div class="map">
+            <img src="map_en.png">
+        </div>
+     </div>
+
+        <div id="foot">
+        COPYRIGHT ALPHA ONE INVESTMENT © 2021. ALL RIGHTS RESERVED.
+        <br><br><br>
+        <a href="index_mobile_en.html">View mobile version</a>
+    </div>
+        
+    </body>
+    </html>

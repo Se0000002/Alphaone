@@ -1,0 +1,658 @@
+html{
+    font-size:0.065824vw;
+}
+body{
+    margin: 0 0 0 0;
+    z-index: -2;
+}
+#logo{
+    display: inline;
+    margin-top: 200rem;
+}
+#topMenu{
+    height: 30rem;  /* 메인 메뉴의 높이 */
+    width: 1000rem;  /* 메인 메뉴의 넓이 */
+    margin: 50rem 0 0 450rem;
+    float: right;
+}
+#topMenu ul {           /* 메인 메뉴 안의 ul을 설정함: 상위메뉴의 ul+하위 메뉴의 ul */
+        list-style-type: none;  /* 메인 메뉴 안의 ul 내부의 목록 표시를 없애줌 */
+        margin: 0;
+        padding:0;
+    }
+    #topMenu ul li {   
+        font-family: 'Lato';         /* 메인 메뉴 안에 ul 태그 안에 있는 li 태그의 스타일 적용(상위/하위메뉴 모두) */
+        color:#000000;               /* 글씨 색을 흰색으로 설정 */  /* 배경 색을 RGB(2D2D2D)로 설정 */
+        float: left;  
+        letter-spacing: 3rem;              /* 왼쪽으로 나열되도록 설정 */
+        line-height: 30rem;          /* 텍스트 한 줄의 높이를 30px로 설정 */
+        vertical-align: middle;     /* 세로 정렬을 가운데로 설정 */
+        text-align: center;         /* 텍스트를 가운데로 정렬 */
+        position: relative;
+        padding: 0 20rem;
+                 /* 해당 li 태그 내부의 top/left 포지션 초기화 */
+    }
+    .menuLink, .submenuLink {           /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+        text-decoration:none;               /* a 태그의 꾸밈 효과 제거 */
+        display: block;                     /* a 태그의 클릭 범위를 넓힘 */
+                          /* 기본 넓이를 150px로 설정 */
+        font-size: 15rem;                    /* 폰트 사이즈를 12px로 설정 */
+        font-weight: bold;                  /* 폰트를 굵게 설정 */
+        font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */
+    }
+    .menuLink {     /* 상위 메뉴의 글씨색을 흰색으로 설정 */
+        color: black;
+    }
+    
+    .submenuLink {          /* 하위 메뉴의 a 태그 스타일 설정 */
+        color: #2d2d2d;             /* 글씨 색을 RGB(2D2D2D)로 설정 */
+        background-color: white;    /* 배경색을 흰색으로 설정 */   /* 테두리를 설정 */
+        margin-top: -1px;          /* 위 칸의 하단 테두리와 아래칸의 상단 테두리가 겹쳐지도록 설덩 */
+    }
+    .submenu {              /* 하위 메뉴 스타일 설정 */
+        position: absolute;     /* html의 flow에 영향을 미치지 않게 absolute 설정 */
+        height: 0px;            /* 초기 높이는 0px로 설정 */
+        overflow: hidden; 
+        background-color: #ffffff;     /* 실 내용이 높이보다 커지면 해당 내용 감춤 */
+        transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(기본) */
+        -webkit-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 크롬/사파라ㅣ) */
+        -moz-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 파폭) */
+        -o-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 오페라) */
+        box-shadow: 5px 5px 15px #ccc;
+    
+    }
+    .topMenuLi:hover .submenu { /* 상위 메뉴에 마우스 모버한 경우 그 안의 하위 메뉴 스타일 설정 */
+        height: 62px;           /* 높이를 93px로 설정 */
+    }
+    .submenuLink:hover {        /* 하위 메뉴의 a 태그의 마우스 오버 스타일 설정 */
+        color: #000000;                 /* 글씨색을 빨간색으로 설정 */
+        background-color: #dddddd;  /* 배경을 RGB(DDDDDD)로 설정 */
+    }
+
+#header {
+    display:grid;
+    grid-template-columns: 150rem 1.3fr;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 100;
+
+}
+#sec1{
+    background-color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100rem 0;
+}
+.bar{
+    width: 70rem;
+    height: 1rem;
+    margin: 5rem auto 35rem;
+    border: none;
+    border-top: 2rem solid #c6aa94;
+    border-color: #e8cb6b;
+}
+#sec1text1{
+    padding: 20rem 0 20rem 0;
+    font-size: 50rem;
+    color:#dcba49;
+}
+.arrow1, .arrow2{
+  display: block;
+  width: 30rem;
+  height: 30rem;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid #e8c558;
+  border-bottom: 2px solid #e8c558;
+  margin: 0 0 0 6rem;
+}
+
+.arrow1
+{
+  margin-top: ;
+}
+
+.arrow1, .arrow2
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.arrow1
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.arrow2
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+#scroll{
+position: relative;
+margin: -50rem 730rem 0rem 730rem;
+}
+.mouse
+{
+height: 80rem;
+width: 40rem;
+  border-radius: 20rem;
+  transform: none;
+  border: 2px solid #e8c558;
+  
+}
+.wheel {
+  height: 25px;
+  width: 2px;
+  display: block;
+  margin: 10rem auto;
+  background: #e8c558;
+  position: relative;
+  text-align:center;
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css); 
+
+#sec1text2{
+    font-family: 'Nanum Barun Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 20rem;
+    padding-bottom: 210rem;
+    color:#7c706b;
+
+}
+#sec2{
+    margin: 50rem 150rem;
+    padding: 100rem 0 150rem 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box{
+    border-right: 2rem solid #d3d3d3;
+
+}
+.number{
+    margin:0 auto;
+    font-family: 'Lato';
+    width: 230rem;
+    height: 80rem;
+    background: #ffffff;
+    text-align: center;
+    color: #e8cb6b;
+    font-size:33rem;
+    line-height: 50rem;
+}
+
+.word{
+    padding-top:2rem;
+    font-size: 36rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom:50rem;
+    color: #e8cb6b;
+}
+.wordB{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50rem;
+}
+.txt{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top:2rem;
+    font-size: 23rem;
+    text-align: center;
+    line-height: 40rem;
+    font-weight:normal;
+    margin-bottom:50rem;
+    color:#7c706b;
+}
+#sec3{
+    background-image:linear-gradient(rgba(250, 228, 157, 0.7), rgba(250, 228, 157, 0.7)),url("Magnify.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800rem;
+    text-align: center;
+    min-height: 100%;
+}
+#sec3text{
+    padding: 350rem 0 20rem 0;
+    font-size: 50rem;
+    color: #ffffff;
+    font-family: 'Lato';
+
+}
+#sec4{
+    position: relative;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #ffffff;
+    padding: 100rem 0;
+    font-family: Lato, "Nanum Gothic";
+    text-align: center;   
+}
+.sec4text1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16rem;
+    letter-spacing: -1rem;
+    color: #6b6b6b;
+}
+.sec4text2{
+    font-family: 'Nanum Gothic';
+    font-weight: normal;
+    font-size: 28rem;
+    color: #dcba49;
+}
+.sec4text3{
+    font-family: 'Nanum Barun Gothic', sans-serif;
+    color: #747474;
+    font-size: 22rem;
+    text-align: center;
+    line-height: 180%;
+    
+}
+.sec4text3 span{
+    font-size: 25rem;
+    position: absolute;
+    padding-left: 200rem;
+    z-index: 2;
+}
+.sign{
+    position: absolute;
+    right: 200rem;
+}
+.line-col.left {
+    left: -25px;
+   }
+.line-col.right {
+    right: -20px;
+   }
+.line-row {
+    width: 8px;
+    height: 50px;
+    border-left: 1px solid #747474;
+    margin: 40px auto;
+   }
+.line {
+    content: '';
+    display: inline-block;
+    border-color: #dcba49;
+}
+.sec4text4{
+    font-family: 'Nanum Barun Gothic', sans-serif;
+    color: #747474;
+    font-size: 22rem;
+    margin-bottom: 0;
+    line-height: 160%;
+}
+.sec4text4 span{
+    color: #dcba49;
+
+}
+#sec5{
+    position: relative;
+    padding: 0px 0px 20rem 0px;
+    background-color: #ffffff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Lato';
+    font-size: 30rem;
+    text-align: center;
+}
+#sec5 h1{
+    color:#dcba49;
+}
+#sec6{
+    padding: 0px 0px 50rem 0px;
+    font-family: 'Nanum Barun Gothic', sans-serif;
+}
+.row6 {
+    display: flex;
+    align-items: center;
+}
+.imgbox{
+    display: block; 
+    margin: 0px 200rem;
+}
+.sec6title{
+    font-size: 25rem;
+}
+.sec6role{
+    font-size: 22rem;
+}
+.imgtext{
+    font-size: 17rem;
+    font-weight: lighter;
+    padding-left: 40rem;
+    padding-right: 40rem;
+}
+.sec6line{
+    position: relative;
+    padding: 30rem 0rem 20rem 0rem;
+}
+.teamline{
+    border: 0;
+    border-top: 1px solid #e1e1e1;
+    height: 1px;
+    width: 90%;
+    border-color: #f0d16c;
+}
+#sec7{
+    background-image:linear-gradient(rgba(220, 186, 73, 0.5), rgba(220, 186, 73, 0.5)),url("cow.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800rem;
+    text-align: center;
+    min-height: 100%;
+}
+#sec7text{
+    padding: 350rem 0 50rem 0;
+    font-size: 50rem;
+    letter-spacing: 10rem;
+    color: #ffffff;
+    font-family: 'Lato';
+}
+.sec7box{
+    border: 2rem solid #ffffff;
+    padding: 10rem;
+}
+#sec8{
+    position: relative;
+    padding: 40rem 210rem 50rem 210rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1.3fr 1.5fr;
+    font-family: 'Nanum Barun Gothic', sans-serif;   
+}
+.sec8text1{
+    font-size: 30rem;
+    font-family: 'Nanum Gothic',sans-serif; 
+    color: #dcba49;
+    margin-bottom: 30rem;
+    text-align: left;
+}
+.sec8text2{
+    font-size: 15rem;
+    color: #313131;
+}
+.col2{
+    margin-left: 20rem;
+}
+#sec9{
+    background-image:linear-gradient(rgba(220, 186, 73, 0.5), rgba(220, 186, 73, 0.5)),url("cow.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800rem;
+    text-align: center;
+    min-height: 100%;
+}
+#sec9text{
+    padding: 350rem 0 50rem 0;
+    font-size: 50rem;
+    letter-spacing: 10rem;
+    color: #ffffff;
+    font-family: 'Lato';
+}
+.sec9box{
+    border: 2rem solid #ffffff;
+    padding: 10rem;
+}
+#sec10{
+    position: relative;
+    padding: 78rem 0 20rem 0;
+    text-align: center;  
+}
+.sec10img{
+    width:50%;
+    height: auto;
+}
+#sec11{
+    background-image:linear-gradient(rgba(220, 186, 73, 0.6), rgba(220, 186, 73, 0.6)),url("paper.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800rem;
+    text-align: center;
+    min-height: 100%;
+}
+#sec11text{
+    padding: 350rem 0 50rem 0;
+    font-size: 50rem;
+    letter-spacing: 15rem;
+    color: #ffffff;
+    font-family: 'Lato';
+}
+#sec12{
+    position: relative;
+    padding: 100rem 40rem 100rem 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.sec12box{
+    border: 1rem solid #e5e5e5;
+    border-color: #d1d1d1;
+    margin: 0 10rem;
+}
+.sec12text{
+    font-family: 'Nanum Barun Gothic';
+    font-size: 25rem;
+    margin: 30rem 0;
+    border-top: 1rem solid #e5e5e5;
+}
+#sec13{
+    background-image:linear-gradient(rgba(220, 186, 73, 0.5), rgba(220, 186, 73, 0.5)),url("hand.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800rem;
+    text-align: center;
+    min-height: 100%;
+}
+#sec13text{
+    padding: 350rem 0 50rem 0;
+    font-size: 50rem;
+    letter-spacing: 15rem;
+    color: #ffffff;
+    font-family: 'Lato';
+}
+#sec14{
+    padding: 400rem;
+}
+#sec15{
+    position: relative;
+    padding: 50rem 150rem;
+    text-align: center;
+}
+.sec15text1{
+    font-family: 'Lato';
+    font-size: 30rem;
+    letter-spacing: 10rem;
+    color: #7c706b;
+}
+.sec15text2{
+    font-family: 'Nanum Barun Gothic';
+    font-size: 50rem;
+    color: #dcba49;
+    letter-spacing: -1rem;
+}
+.backgroundtext{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250rem;
+    color: #f1f1f1;
+    letter-spacing: -15rem;
+    opacity: 0.35;
+}
+.textbox{
+    position: absolute;
+    width: 840rem;
+    height: 473rem;
+    background: #f1f1f1;
+    margin: -100rem 0 50rem 50rem;
+    
+}
+.form-inline{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 10rem 10rem 10rem 30rem;
+}
+.form-control {
+    display: inline;
+    float: left;
+    margin-right: 20rem;
+    height: 60rem;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 30rem;
+    color: #000000;
+    background: #f1f1f1;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 3rem solid #cfcfcf;
+    padding: 70rem 20rem 0 0;
+    
+
+}
+.info{
+    position: absolute;
+    width: 500rem;
+    height: 370rem;
+    text-align: left;
+    margin: -70rem 0 0 950rem;
+
+}
+.btn{
+    width: 200rem;
+    height: 80rem;
+    background: #f6d670;
+    border-radius: 20rem;
+    border: 5rem solid #f6d670;
+    box-shadow: 0 0 0 3rem #ffffff inset;
+    font-family: 'Lato';
+    font-size: 25rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 10rem;
+    padding: 5rem;
+    margin: -60rem 20rem 30rem 580rem;
+}
+.office{
+    font-family: 'Lato';
+    font-size: 30rem;
+    color: #dcba49;
+}
+.location{
+    font-family: 'Nanum Barun Gothic';
+    font-size: 21rem;
+    color: #7c706b;
+}
+.tel{
+    font-family: 'Nanum Barun Gothic';
+    font-size: 21rem;
+    color: #000000;
+}
+.mail{
+    font-family: 'Nanum Barun Gothic';
+    font-size: 21rem;
+    color: #dcba49;
+}
+.map{
+    position: relative;
+    margin-top: 450rem;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+#foot{
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    font-family: arial;
+    padding:30rem 0 30rem 0;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-size:15rem;
+
+}
+#foot a{
+    text-decoration: none;
+    color:black;
+    font-weight:bolder;
+}
