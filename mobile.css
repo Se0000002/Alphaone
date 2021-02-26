@@ -420,10 +420,8 @@ header{
         font-family: 'Lato';
     }
     #sec12{
-        position: relative;
         padding: 100rem 0;
         display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         text-align: center;
     
